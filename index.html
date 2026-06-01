@@ -222,10 +222,10 @@ if(headY >= size) headY = 0;
         y:headY
     };
 
-    if(
-        headX===food.x &&
-        headY===food.y
-    ){
+if(
+    Math.round(headX) === Math.round(food.x) &&
+    Math.round(headY) === Math.round(food.y)
+){
 
         score++;
         eatEffect = 10;
@@ -329,6 +329,7 @@ document.getElementById("rightBtn").addEventListener("touchstart", e=>{
     changeDir("right");
 });
 };
+
 </script>
 
 </body>
